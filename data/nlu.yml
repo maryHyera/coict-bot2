@@ -1,0 +1,779 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - can you answer me
+    - habari
+    - hello bot
+    - oy
+    - Good morning
+    - mambo
+    - g
+    - Hello
+    - hhh
+    - hellow
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - am fine
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - not fine
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you human
+    - who are you
+    - you are very slow
+- intent: about_us
+  examples: |
+    - what is coict
+    - who is coict
+    - about the college
+    - about coict
+    - abt
+    - info about college
+    - info
+    - can you tell me about the college
+    - coict
+    - abouy
+    - about
+    - information of coict
+- intent: location
+  examples: |
+    - where is it located
+    - how can i reach the college
+    - where is coict
+    - i want to reach coict
+    - location
+    - located
+    - i want to go to coict
+    - locate
+    - i want to go to college
+    - how can i get to coict
+    - location of the college
+    - direct me to coict
+- intent: contacts
+  examples: |
+    - contacts
+    - i want to talk to the reception
+    - i want to communicate with coict
+    - communication with he college
+    - how can i communicate with coict
+    - phone number
+    - email
+    - mobile number
+    - contact
+    - can i have coict contacts
+- intent: courses_offered
+  examples: |
+    - what can i study at coict
+    - what courses are found at coict
+    - how many courses are there
+    - how many programs are there
+    - courses offered
+    - what are programs offered at the college
+    - recommend me a course to study
+    - courses that someone can study at coict
+    - is there any course i can study
+    - what options do i have to study at coict
+    - i dont know what to study at the college
+    - courses at the college
+    - course offered
+    - course in coict
+    - course
+    - courses
+    - i want to study
+    - which courses are taught?
+    - i want to study coict
+- intent: non-degree-courses
+  examples: |
+    - certificate courses
+    - Diploma courses
+    - non degree courses offered
+    - non degree programmes
+    - short courses offered at the college
+    - non-degree-courses
+    - certificate course
+    - cerificates course
+- intent: undergraduate-courses
+  examples: |
+    - i want to study undergraduate
+    - undergraduate courses offered
+    - what undergraduate programme are there
+    - degree courses
+    - degree programmes
+    - is there any undergraduate course
+    - undergraduate-courses
+    - i want to study undergraduate but i dont know the cost
+    - undergraduate courses offered and their cost
+    - what undergraduate programme tuition fee
+    - degree courses fee
+    - degree programmes cost
+    - undergraduate course fee structure
+    - Telecom tuition fee
+    - Bsc in CS cost
+- intent: postgraduate-courses
+  examples: |
+    - postgraduate diploma programmes
+    - masters programmes
+    - phD programmes
+    - i want to study masters
+    - i have finished my undergraduate studies, what can i sstudy
+    - postgraduate courses offered
+    - postgraduate programmes offered
+    - postgraduate
+    - postgraduate-courses
+    - postgraduate programmes
+    - phd
+    - phD
+    - masters?
+- intent: non-degree-fee
+  examples: |
+    - certificate courses fee structure
+    - Diploma courses cost
+    - non degree courses cost
+    - non degree programme fee structure
+    - short courses offered at the college and their cost
+    - non-degree courses tuition fee
+    - certificate fee
+    - fees for certificate course
+- intent: postgraduate-fee
+  examples: |
+    - postgraduate diploma programmes cost
+    - postgraduate diploma tuition fee
+    - Masters feee
+    - How much does it cost to be a Doctor
+    - masters programmes tuition fee
+    - phD programmes fee
+    - phD programmes cost
+    - i want to study masters, what is the fee?
+    - postgraduate courses offered fee
+    - fee of postgraduate programmes offered
+    - postgraduate fee
+    - postgraduate-fees
+- intent: postpone_studies
+  examples: |
+    - postpone
+    - i want to leave college
+    - i have to postpone my studies
+    - can i postpone college
+    - how can i pospone
+    - i want to quit my studies
+    - i can't continue to study
+    - i want to rest, i will continue to study after few years
+    - drop college
+    - quite college
+    - stop studies
+    - am tired of studying
+- intent: accomodation
+  examples: |
+    - place to live
+    - place to stay
+    - place to sleep nearby
+    - does the college provide hostels
+    - accomodation
+    - hostels
+    - live
+    - any hostel provided?
+    - i want to stay at the college
+    - student quater
+    - where can i live when i study at coict
+    - is there any place to stay
+    - am looking for a place to stay near the college
+    - i need a place to stay
+- intent: missed_exam
+  examples: |
+    - i didnt do the exam
+    - i missed the exam
+    - i was late at the exam
+    - i didnt sit for the exam
+    - i was sick the date of the exam
+    - i had an emergency during the exam
+    - i didn't do all of my exams
+    - missed examination
+    - exam
+- intent: missed_test
+  examples: |
+    - i didnt do the test
+    - i missed the test
+    - i was late at the test
+    - i didnt sit for the test
+    - i was sick the date of the test
+    - i had an emergency during the test
+    - i didn't do all of my test
+    - missed test
+    - test
+    - missed_test
+- intent: missed_ue
+  examples: |
+    - i didnt do the ue
+    - i missed the ue
+    - i was late at the university exam
+    - i didnt sit for the ue
+    - i was sick the date of the univaersity exam
+    - i had an emergency during the ue
+    - i didn't do all of my ue
+    - missed university exam
+    - missed_ue
+    - ue
+    - missed ue
+- intent: supervisor
+  examples: |
+    - how can i get a supervisor?
+    - i need a supervisor
+    - supervison
+    - supervisor
+    - can i get a supervisor
+    - i want a supervisor
+    - Final year project supervisor
+    - FYP supervisor
+    - FYP spvsr
+    - project supervision
+    - fyp
+    - fyp supervisor
+    - how can i get a supervisor
+    - masters supervisor
+- intent: CS-department
+  examples: |
+    - computer science department
+    - CS department
+    - Computer engineering
+    - CEIT
+    - BIT
+    - Business information technology
+    - computer science
+    - cs
+    - CS-department
+- intent: ETE-department
+  examples: |
+    - Electronics and Telecommunications Engineering
+    - ETE
+    - Electronics Enginering
+    - TE
+    - EE
+    - Electronics
+    - ETE-department
+    - ete
+- intent: start
+  examples: |
+    - \start
+    - start
+- intent: appeal
+  examples: |
+    - appeal results
+    - not happy with my results
+    - appeal
+    - my results are not correct
+    - i want to correct my results
+    - What procedures do i have to follow if i want to change my results
+    - change results
+    - fake results
+    - my results are not real
+    - not satisfied with results
+- intent: fee_structure
+  examples: |
+    - fee structure
+    - How much does it cost to study
+    - tuition fee
+    - Tell me about fees
+    - Cost of studying masters
+    - cost of studies
+    - Amount of money
+    - fee
+    - fees
+    - course fee
+- intent: Block_A
+  examples: |
+    - A204
+    - Block A
+    - Administration block
+    - A 203
+    - A 107
+    - A 205
+    - A 04
+    - A 006
+- intent: Block_B
+  examples: |
+    - Where is the venue B302
+    - B204
+    - Block B
+    - location of B106
+    - venue B205
+    - B310
+    - B206
+    - B311
+    - b10000
+    - b202
+    - block b
+- intent: Block_C
+  examples: |
+    - c2
+    - c4
+    - Block C
+    - C5
+    - where is the venue C4
+    - Lab C5
+    - Computer laboratory C3
+    - C01
+- intent: Block_D
+  examples: |
+    - D18
+    - D02
+    - D07
+    - Block D
+    - D01
+    - D17
+    - D016
+    - D15
+    - D04
+    - Luhanga hall
+    - block d
+    - computer lab?
+- intent: ETE_staff
+  examples: |
+    - who is [Abdi Abdallah](staff)
+    - who is [Baraka Maiseli](staff)
+    - who is [Alfred Mwambela](staff)
+    - who is [Omar Hamad](staff)
+    - who is [Mussa Kissaka](staff)
+- intent: timetable
+  examples: |
+    - timetable
+    - class schedule
+    - course timetable
+    - what classes are we attending
+    - at what time are we going to class
+    - what is the timetable of telecommunications
+    - what is the timetable of computer science
+- intent: transcript
+  examples: |
+    - transcript
+    - Provisional results
+    - i want transcript
+    - i want my provisional results
+    - where can i get my provisional results
+    - i want to see my results
+    - who provides provisional results?
+    - my cumulative results
+    - i want my results
+- intent: out_of_scope
+  examples: |
+    - I am asking you an out of scope question
+    - 4 + 2 = ?
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site :(
+    - Can I ask you questions first?
+    - Can I die
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Do you know [Kevin Pelton](name)
+    - Find nearest [pizzahut](company)
+    - Have we met before?
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+    - I am an opioid addict
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text on light gray background ...
+    - I changed my mind
+    - I have installed it
+    - I ned a GP in 94301
+    - I need a GP in 94301
+    - I need a girl friend!
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - I want a new laptop
+    - I want book a hotel
+    - I want french cuisine
+    - I want pizza
+    - I want to die
+    - I want to order pizza
+    - I want to use pipe
+    - I will check
+    - I'm a shitmuncher
+    - Is Rasa really smart?
+    - Is this Goal-Oriented Chatbot?
+    - Is today saturday?
+    - Mail me the guide
+    - Make me a sandwich
+    - NLW
+    - Nice name
+    - Now?
+    - Pizza bot
+    - Recharge
+    - SEL ME SOMETHING
+    - The Try it out is not working
+    - The weather is good
+    - Today
+    - Try it out broken
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - [Kristin](name), I want to marry you
+    - [german](language)?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - aRE YOU SINGLE
+    - again?
+    - alexa, order 5 tons of natrium chloride
+    - and make chicken noises into the phone
+    - are the newsletter worth the subscription?
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you human ?
+    - are you russian?
+    - are you sick
+    - are you using Rasa [Core](product) and [NLU](product) ?
+    - are you vegan
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - but if rasa is open source why do you have a sales team
+    - buy one please
+    - buy groceries
+    - call me father
+    - can we keep chatting?
+    - can you book dinner
+    - can you cheer me up
+    - can you cook dinner
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you help me with your docs
+    - can you help me with your docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - cannot see
+    - chgfhgh
+    - chinese ok?
+    - colder
+    - common, just try
+    - connect to alexa
+    - custom service
+    - did i break you
+    - dinner
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you liek cheese?
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - do you want to marry me?
+    - docs
+    - doctor
+    - everything
+    - example of a chatbot
+    - genocide
+    - get me a club mate
+    - github link?
+    - give me a girl friend
+    - give me food
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - have you ever seen [Keith Reilly](name)?
+    - help with [Alma Abrams](name)
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - how
+    - how about NYC
+    - how are [Alicia Jackson](name)'s cats doing?
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how come?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - how to go to newyork ?
+    - i am hungry
+    - i am hungry, what should i do?
+    - i am not a developer but need this for business
+    - i am qq
+    - i can't deal with _your_ request
+    - i do not care how are you
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - i wanna party
+    - i want a non dripping ice cream
+    - i want caffe
+    - i want food
+    - i want good flycam
+    - i want more of you in my life!
+    - i want pizza
+    - i want pizza!!
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to eat
+    - i want to find new friends
+    - i want to find out what you can build with rasa
+    - i want to fly
+    - i want to grab lunch
+    - i want to know current situtation in pakistan
+    - i want to order a pizza
+    - i want to see your happy customers
+    - i will tame a mouse for you
+    - is [John Lewis](name) still married to you
+    - is it a wasteland full of broken robot parts?
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - it's a pity
+    - i´m hungry
+    - license
+    - ljljl
+    - lunch
+    - lunch??
+    - machine learning
+    - mail me the steps
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - pizza
+    - please help with my ice cream it's dripping
+    - please hjave lunchj
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please play music
+    - rasa topics
+    - really? you're so touchy?
+    - refresh
+    - region with no. of records
+    - remember my name
+    - search wikipedia
+    - shitmuncher
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked  ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about [Stanley Ramirez](name)?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - what is differance between bot and mascot?
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is [Sharon Zeches](name)
+    - who is the MD of samsung bangalore ?
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will anser my email?
+    - who's Bill Gates?
+    - whta you think about gdpr?
+    - why
+    - why do you need that?
+    - why its called rasa ?
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - would you like some water
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - you're a woman
+    - ı am learning python
+    - where is the stationary
+    - affirm
+    - what can you do
+    - i want help
+- intent: undergraduate-fee
+  examples: |
+    - undergraduate-fees
+    - undergraduate fee
+    - telecommunication fee structure
+    - tructutretelecommunication fee s
+- intent: aris
+  examples: |
+    - ARIS

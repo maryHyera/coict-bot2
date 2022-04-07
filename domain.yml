@@ -1,0 +1,239 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- Block_A
+- Block_B
+- Block_C
+- Block_D
+- CS-department
+- ETE-department
+- ETE_staff
+- about_us
+- accomodation
+- affirm
+- appeal
+- aris
+- bot_challenge
+- contacts
+- courses_offered
+- deny
+- fee_structure
+- goodbye
+- greet
+- location
+- missed_exam
+- missed_test
+- missed_ue
+- mood_great
+- mood_unhappy
+- nlu_fallback
+- non-degree-courses
+- non-degree-fee
+- out_of_scope
+- postgraduate-courses
+- postgraduate-fee
+- postpone_studies
+- start
+- supervisor
+- timetable
+- transcript
+- undergraduate-courses
+- undergraduate-fee
+entities:
+- product
+- language
+- company
+- name
+- staff
+responses:
+  utter_greet:
+  - text: Hey, welcome to CoICT what can i help you?
+  - text: Hi, am CoICT bot and am happy to help you.
+  - text: Hello, am CoICT bot you can ask me any thing about The College of Information and Communication Technologies (CoICT)
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am CoICT bot.
+  utter_out_of_scope:
+  - text: Out of scope, can you rephrase?
+  utter_location:
+  - text: CoICT is located at Kijitonyama along side bagamoyo road
+  - text: CoICT is near TTCL kijitonyama
+  - text: The College is located at Kijitonyama Campus along Alli Hassan Mwinyi road about five kilometers from the UDSM Main campus (Mwaimu Nyerere Campus).
+  utter_about_us:
+  - text: The College of Information and Communication Technologies (CoICT) is among the colleges of the University of Dar es Salaam (UDSM) in Tanzania. It was established on 27th January, 2011 to address the increasing demand of ICT experts in the country by strengthening the University’s teaching, research and public service in the ICT-related disciplines through a more efficient utilization of the available human and physical resources.
+  utter_contacts:
+  - text: |
+      You can contact the college through
+      Email: principalcoict@udsm.ac.tz
+      Phone: +255 22 270 0201
+      Mobile: +255 715383366
+  - text: |
+      You can communicate with the college through
+      Email: principalcoict@udsm.ac.tz
+      Phone: +255 22 270 0201
+      Mobile: +255 715383366
+  utter_courses_offered:
+  - buttons:
+    - payload: non-degree-courses
+      title: Non-Degree
+    - payload: undergraduate-courses
+      title: Undergraduate
+    - payload: postgraduate-courses
+      title: Postgraduate
+    text: Which level are you?
+  utter_non-degree-courses:
+  - text: |
+      - Certificate in Computer Science (Cert. in CS) - 1 Year
+      - Diploma in Computer Science (Dipl. in CS) - 2 Years
+  utter_undergraduate-courses:
+  - text: |-
+      - ETE DEPARTMENT
+
+      - Bachelor of Science in Telecommunications Engineering (Bsc. in TE) - 4 years
+      - Bachelor of Science in Electronics Engineering (Bsc. in EE) - 4 years
+
+      - CS DEPARTMENT
+
+      - Bachelor of Science in Computer Engineering and Information Technologies (Bsc. in CIT) - 4 years
+      - Bachelor of Science in Computer Science (Bsc. in CS) - 3 years
+      - Bachelor of Science with Computer Science (Bsc. with CS) - 3 years
+      - Bachelor of Science in Business information Technologies (Bsc. in BIT) - 3 years
+  utter_postgraduate-courses:
+  - text: |
+      - DIPLOMA PROGRAMMES
+      - Postgraduate Diploma in Electronics Engineering and Information Technologies - 1 year
+      - Postgraduate Diploma in Education - 1 year
+      - Postgraduate Diploma in Engineering Management - 1 year
+
+      MASTERS PROGRAMMES
+      - Masters of Science in Telecommunications Engineering - 18 Months
+      - Masters of Science in Electronics Engineering and Information Technology - 18 Months
+      - Masters of Science in Computer Science (MSc. in CS) - 18 Months for Regular Programme, 24 Months for Evening Programme
+      - Masters of Science in Health Informatics (MSc. in HI) - 24 Months for Evening Programme
+      - Masters of Science in Information System Management (MSc. in ISM) - 24 Months for Evening Programme
+      - Masters of Science in Computer and IT Systems Management (MSc. in CITSE) - 18 Months for Regular Programme, 24 Months for Evening Programme
+      - Masters of Engineering Management (MEM)- 24 Months for Evening Programme
+
+      PHD PROGRAMMES
+      - Doctor of Philosophy in Telecommunications Engineering - 3 Years
+      - Doctor of Philosophy in Electronics Engineering and Information Technology - 3 Years
+      - Doctor of Philosophy in Computer Science (phD in CS) by Thesis - 3 Years
+      - Doctor of Philosophy in Computer Engineering and IT by Thesis - 3 Years
+      - Doctor of Philosophy in Health Informatics (phD in HI) by Thesis  - 3 Years
+      - Doctor of Philosophy in Computer and IT Systems Engineerng (phD in CITSE)  - 4 Years
+  utter_fee_structure:
+  - buttons:
+    - payload: non-degree-fees
+      title: Non-Degree
+    - payload: undergraduate-fees
+      title: Undergraduate
+    - payload: postgraduate-fees
+      title: Postgraduate
+    text: Which level are you?
+  utter_non-degree-fee:
+  - text: |
+      -  Certificate in Computer Science (Cert. in CS) - 800,000/= TZS
+      -  Diploma in Computer Science (Dipl. in CS) - 2,000,000/= TZS
+  utter_undergraduate-fee:
+  - text: |
+      - ETE Department
+      -  Bachelor of Science in Telecommunications Engineering (Bsc. in TE) - 1,500,000/= TZS
+      -  Bachelor of Science in Electronics Engineering (Bsc. in EE) - 1,500,000/= TZS
+
+      - CS Department
+      -  Bachelor of Science in Computer Engineering and Information Technologies (Bsc. in CIT) - 1,500,000/= TZS
+      -  Bachelor of Science in Computer Science (Bsc. in CS) - 1,300,000/= TZS
+      -  Bachelor of Science with Computer Science (Bsc. with CS) - 1,500,000/= TZS
+      -  Bachelor of Science in Business information Technologies (Bsc. in BIT) - 1,500,000/= TZS
+  utter_postgraduate-fee:
+  - text: |
+      - DIPLOMA PROGREMMES
+      - Postgraduate Diploma in Electronics Engineering and Information Technologies -  2,600,000/= TZS
+      - Postgraduate Diploma in Education - 2,000,000/= TZS
+      - Postgraduate Diploma in Engineering Management - 3,050,000/= TZS
+
+      - MASTERS PROGRAMES
+      - Masters of Science in Telecommunications Engineering - 6,412,500/= TZS
+      - Masters of Science in Electronics Engineering and Information Technology - 6,412,500/= TZS
+      - Masters of Science in Computer Science (MSc. in CS) - 6,412,500/= TZS
+      - Masters of Science in Health Informatics (MSc. in HI) - 6,412,500/= TZS
+      - Masters of Science in Information System Management (MSc. in ISM) - 6,412,500/= TZS
+      - Masters of Science in Computer and IT Systems Management (MSc. in CITSE) - 6,412,500/= TZS
+      - Masters of Engineering Management (MEM)- 6,375,500/= TZS
+
+      - PHD PROGRAMMES
+      - Doctor of Philosophy in Telecommunications Engineering - 10,000,000/= TZS
+      - Doctor of Philosophy in Electronics Engineering and Information Technology - 10,000,000/= TZS
+      - Doctor of Philosophy in Computer Science (phD in CS) by Thesis - 10,000,000/= TZS
+      - Doctor of Philosophy in Computer Engineering and IT by Thesis - 10,000,000/= TZS
+      - Doctor of Philosophy in Health Informatics (phD in HI) by Thesis  - 10,000,000/= TZS
+      - Doctor of Philosophy in Computer and IT Systems Engineerng (phD in CITSE)  - 10,000,000/= TZS
+  utter_accomodation:
+  - text: A limited number of rooms in the halls of residence are available on application before the beginning of the academic year. Accommodation in the Halls is therefore not guaranteed for every student. Students are urged to find their own accommodation outside the Halls. Presently,t there are six Halls of Residence on the main campus. There are also residential places for students at Magufuli, CoICT and Mabibo Hostels.
+  - text: Accommodation in the Halls is not guaranteed for every student. Students are urged to find their own accommodation outside the Halls. Priority for on-campus accommodation will be given to students with disabilities, foreign students, and female students from up- country.
+  - text: A limited number of rooms in the halls of residence are available on application before the beginning of the academic year. There are also residential places for students at Magufuli, CoICT and Mabibo Hostels where priority for on-campus accommodation will be given to students with disabilities, foreign students, and female students from up- country.
+  utter_postpone_studies:
+  - text: |
+      - Permission to postpone studies will be considered after producing satisfactory evidence of the reasons for postponement and 
+        written approval from the sponsor. Special circumstances shall include sickness, serious social problems and severe sponsorship problem.
+      - All letters are written to DVC pass to your Head of department and Principal of the College.
+  utter_missed_exam:
+  - text: which exam did you miss, test or UE?
+  - buttons:
+    - payload: missed_test
+      title: Test
+    - payload: missed_ue
+      title: UE
+    text: which exam did you miss?
+  utter_missed_test:
+  - text: |
+      - All missed test letters are written to Head of department, if the reason is based on medical factors, a medical report endorsed by the University Health Centre
+        must be submitted together with the letter; otherwise the reason will not be considered.
+  utter_missed_ue:
+  - text: |
+      - All missed UE letters are written to Principal through Head of department, if the reason is based on medical factors, a medical report endorsed by the University Health Centre
+        must be submitted together with the letter; otherwise the reason will not be considered. Similarly,
+        where the reason is based on social factors, the opinion of the Dean of Students of the University shall
+        be submitted.
+  utter_supervisor:
+  - buttons:
+    - payload: CS-department
+      title: CS
+    - payload: ETE-department
+      title: ETE
+    text: Which department are you studying?
+  utter_CS-department:
+  - text: CS department works
+  utter_ETE-department:
+  - text: ETE department works
+  utter_appeal:
+  - text: |
+      - All appeals are written to DVC academic pass to Head of department and Principal of the college.
+      - If an appeal is based on medical factors, a medical report endorsed by the University Health Centre
+        must be submitted together with the appeal; otherwise the appeal will not be considered. Similarly,
+        where the appeal is based on social factors, the opinion of the Dean of Students of the University shall
+        be submitted before the appeal can be considered.
+  utter_timetable:
+  - text: Here is the link to timetable [Google website] (https://timetable.udsm.ac.tz/)
+  utter_transcript:
+  - text: Provisional results and transcripts are issued by corresponding department, you can go to secretary of your department and make a request.
+  utter_Block_A:
+  - text: Block A works
+  utter_Block_B:
+  - text: Block B works
+  utter_Block_C:
+  - text: Block C works
+  utter_Block_D:
+  - text: Block D works
+  utter_aris:
+  - text: Aris is an online platform that allow Staff and Students of University of Dar es Salaam to manage their management tasks online.
+actions:
+- action_ETE_staff
+- utter_aris

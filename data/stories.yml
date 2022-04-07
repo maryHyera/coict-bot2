@@ -1,0 +1,259 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 681e1c7c62644612b30d6545c91aec2c
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: location
+  - action: utter_location
+- story: Story from Conversation ID 6b0e9fd96daa434f87409157ff5b3097
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: location
+  - action: utter_location
+- story: Story from Conversation ID bfb24131ee944cc19d0d2cbe5d418495
+  steps:
+  - intent: location
+  - action: utter_location
+- story: Story from Conversation ID 5fca90e28a684e57a6b4cd40fc4319e0
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contacts
+  - action: utter_contacts
+- story: Story from Conversation ID cc0492fb29a047a8af7d7cfc0a9401bb
+  steps:
+  - action: utter_about_us
+  - intent: postpone_studies
+  - action: utter_postpone_studies
+- story: Story from Conversation ID cc0492fb29a047a8af7d7cfc0a9401bb
+  steps:
+  - action: utter_about_us
+  - intent: postpone_studies
+  - action: utter_postpone_studies
+- story: Story from Conversation ID 0d0f22d1b0f74908a6405520bd78a806
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: accomodation
+  - action: utter_accomodation
+- story: Story from Conversation ID 5dc95991e9924fcd8d96f93e2d7a426a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_offered
+  - action: utter_courses_offered
+- story: non degree
+  steps:
+  - intent: non-degree-courses
+  - action: utter_non-degree-courses
+- story: undergraduate courses
+  steps:
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-courses
+- story: postgraduate courses
+  steps:
+  - intent: postgraduate-courses
+  - action: utter_postgraduate-courses
+- story: Story from Conversation ID 05413c1f73714c1bae5747e643dd50ea
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-courses
+- story: Story from Conversation ID 05413c1f73714c1bae5747e643dd50ea
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-courses
+- story: Story from Conversation ID c495fb1a4ea1427194bc76f5117ccb43
+  steps:
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-courses
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: non-degree-courses
+  - action: utter_non-degree-courses
+  - intent: postgraduate-courses
+  - action: utter_postgraduate-courses
+- story: non degree fee
+  steps:
+  - intent: non-degree-fee
+  - action: utter_non-degree-fee
+- story: undergraduate courses fee
+  steps:
+  - intent: undergraduate-fee
+  - action: utter_undergraduate-fee
+- story: postgraduate courses fee
+  steps:
+  - intent: postgraduate-fee
+  - action: utter_postgraduate-fee
+- story: missed exam
+  steps:
+  - intent: missed_exam
+  - action: utter_missed_exam
+- story: missed exam1
+  steps:
+  - intent: missed_exam
+  - action: utter_missed_exam
+  - intent: missed_test
+  - action: utter_missed_test
+- story: missed test
+  steps:
+  - intent: missed_test
+  - action: utter_missed_test
+- story: missed ue
+  steps:
+  - intent: missed_ue
+  - action: utter_missed_ue
+- story: supervisor
+  steps:
+  - intent: supervisor
+  - action: utter_supervisor
+- story: CS department
+  steps:
+  - intent: CS-department
+  - action: utter_CS-department
+- story: ETE department
+  steps:
+  - intent: ETE-department
+  - action: utter_ETE-department
+- story: Story from Conversation ID 0d5d6187e86d4de4a9fdafc827ad7dc1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: supervisor
+  - action: utter_supervisor
+  - intent: ETE-department
+  - action: utter_ETE-department
+- story: Story from Conversation ID 578a5697a74f4e85a68063ecf38cac9a
+  steps:
+  - intent: ETE-department
+  - action: utter_ETE-department
+  - intent: CS-department
+  - action: utter_CS-department
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: supervisor
+  - action: utter_supervisor
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: supervisor
+  - action: utter_supervisor
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 2c2d4c43904f42fa97c7db38f29d03fe
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: non-degree-courses
+  - action: utter_non-degree-courses
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-courses
+- story: Story from Conversation ID b2650138db3e40dbb57f36c74462790e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: non-degree-fee
+  - action: utter_non-degree-fee
+  - intent: undergraduate-courses
+  - action: utter_undergraduate-fee
+- story: Story from Conversation ID c96845035ec74484985bb54436e8aadd
+  steps:
+  - intent: fee_structure
+  - action: utter_fee_structure
+  - intent: undergraduate-fee
+  - action: utter_undergraduate-fee
+- story: Story from Conversation ID 19a29e182d3448328c484b4b8840f3cb
+  steps:
+  - intent: undergraduate-fee
+  - action: utter_undergraduate-fee
+- story: Story from Conversation ID 81424838a09842d3adbb08f0ff493cfd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+- story: Story from Conversation ID 5cb58ab0794948ab801a56ff1a31f9d2
+  steps:
+  - intent: fee_structure
+  - action: utter_fee_structure
+  - intent: postgraduate-fee
+  - action: utter_postgraduate-fee
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: postgraduate-courses
+  - action: utter_postgraduate-courses
+- story: timetable
+  steps:
+  - intent: timetable
+  - action: utter_timetable
+- story: transcript
+  steps:
+  - intent: transcript
+  - action: utter_transcript
+- story: Block A
+  steps:
+  - intent: Block_A
+  - action: utter_Block_A
+- story: Block B
+  steps:
+  - intent: Block_B
+  - action: utter_Block_B
+- story: Block C
+  steps:
+  - intent: Block_C
+  - action: utter_Block_C
+- story: Block D
+  steps:
+  - intent: Block_D
+  - action: utter_Block_D
+- story: ETE staff
+  steps:
+  - intent: ETE_staff
+  - action: action_ETE_staff
+- story: Story from Conversation ID e0aedee1febd4f9385960d133e154773
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fee_structure
+  - action: utter_fee_structure
+  - intent: postgraduate-fee
+  - action: utter_postgraduate-fee
+- story: Story from Conversation ID daf66ea31ecf4213985c17d1b3b116c8
+  steps:
+  - action: utter_about_us
+  - intent: location
+  - action: utter_location
+  - intent: about_us
+  - action: utter_about_us
+- story: Story from Conversation ID d88b9b592b914070b39e51ae3c819f52
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: courses_offered
+  - action: utter_courses_offered
+  - intent: non-degree-courses
+  - action: utter_non-degree-courses
+  - intent: non-degree-fee
+  - action: utter_non-degree-fee
+  - intent: transcript
+  - action: utter_transcript
